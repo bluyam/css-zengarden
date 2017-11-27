@@ -17,22 +17,17 @@ body {
 .intro header,
 .summary {
     text-align: center;
-    padding-bottom: 1em;
 }
 
 .intro {
     background-color: black;
 }
 
-.summary a {
-    color: cyan;
-}
-
 header {
-    color: #00cc00;
+    color: #0b0;
     font-family: 'Press Start 2P', cursive;
     text-transform: uppercase;
-    padding: 2.5em 1.5em 0;
+    padding: .5em 1.5em 0;
 }
 
 header h1 {
@@ -50,7 +45,7 @@ header h2 {
 h3 {
     position: relative;
     font-family: 'Press Start 2P', cursive;
-    color: #00cc00;
+    color: #0b0;
     font-size: 1.5em;
     line-height: 1.25em;
     text-transform: uppercase;
@@ -109,15 +104,6 @@ li {
 }
 
 
-/* 
-[role=contentinfo] {
-    background-color: black;
-    font-family: 'Press Start 2P', cursive;
-    text-align: center;
-    font-size: 1em;
-} */
-
-
 /* specific elements */
 
 .summary {
@@ -131,7 +117,7 @@ li {
 
 a {
     font-weight: 400;
-    color: #00cc00;
+    color: #0b0;
 }
 
 .preamble {
@@ -175,7 +161,7 @@ a {
 footer {
     margin-top: -1em;
     padding: 1.5em;
-    background-color: #00cc00;
+    background-color: #0b0;
     font-family: 'Press Start 2P', cursive;
     display: flex;
     justify-content: space-around;
@@ -208,15 +194,18 @@ footer a {
         display: block;
         background-image: radial-gradient(white 0%, rgb(33, 33, 33) 100%, rgb(150, 150, 150) 40%);
         width: 718px;
-        height: 3150px;
+        height: 3710px;
         left: -25px;
         content: " ";
-        /* box-shadow: 10px 10px 5px #888888; TODO: MAKE THIS NICE */
+        box-shadow: 0px 10px 35px black;
     }
     .page-wrapper {
         width: 668px;
         position: absolute;
         left: 50%;
         transform: translate(-50%, 0);
+    }
+    header {
+        margin-top: 1.5em;
     }
 }
