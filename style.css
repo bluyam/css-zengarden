@@ -1,0 +1,222 @@
+/** CSS Zen Garden Frogger Style v1.0
+ CSS released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  **/
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400|Press+Start+2P');
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("images/starry.png");
+    background-color: black;
+}
+
+.intro header,
+.summary {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.intro {
+    background-color: black;
+}
+
+.summary a {
+    color: cyan;
+}
+
+header {
+    color: #00cc00;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding: 2.5em 1.5em 0;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: .25em;
+}
+
+header h2 {
+    font-size: 1em;
+    letter-spacing: .1em;
+    line-height: 1.25em;
+}
+
+h3 {
+    position: relative;
+    font-family: 'Press Start 2P', cursive;
+    color: #00cc00;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+h3::after {
+    display: block;
+}
+
+.preamble h3::after {
+    content: url("images/log.png")
+}
+
+.benefits h3::after,
+.explanation h3::after {
+    content: url("images/vehicles.png")
+}
+
+.participation h3::after {
+    content: url("images/twurtles.png")
+}
+
+.requirements h3::after {
+    content: url("images/flies.png")
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: white;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+    margin-top: .75em;
+    margin-bottom: .75em;
+}
+
+a,
+abbr {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    text-align: center;
+}
+
+[role=article] {
+    padding: 2em;
+    background-color: rgb(0, 0, 92);
+}
+
+
+/* 
+[role=contentinfo] {
+    background-color: black;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1em;
+} */
+
+
+/* specific elements */
+
+.summary {
+    padding: 0 2em 4.6em;
+    background-color: black;
+}
+
+.summary::after {
+    content: url('images/frogger_still.png');
+}
+
+a {
+    font-weight: 400;
+    color: #00cc00;
+}
+
+.preamble {
+    background-color: rgb(0, 0, 92);
+}
+
+.explanation {
+    background-color: black;
+}
+
+.participation {
+    background-color: rgb(0, 0, 92);
+}
+
+.benefits {
+    background-color: black;
+}
+
+.requirements {
+    background-color: rgb(0, 0, 92);
+}
+
+.sidebar {
+    background-color: black;
+    padding-top: 1.5em;
+    font-family: 'Hind', sans-serif;
+    font-weight: 300;
+}
+
+.sidebar li {
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .075em;
+    color: #757575;
+}
+
+.sidebar a {
+    color: darkgrey;
+}
+
+footer {
+    margin-top: -1em;
+    padding: 1.5em;
+    background-color: #00cc00;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 300;
+    font-size: .85em;
+}
+
+footer a {
+    color: black;
+}
+
+.zen-resources {
+    padding-bottom: 2em;
+}
+
+.select,
+.archives,
+.resources {
+    font-size: 1em;
+}
+
+.indicator {
+    display: none;
+}
+
+@media only screen and (min-width: 769px) {
+    .page-wrapper::before {
+        z-index: -2;
+        position: absolute;
+        display: block;
+        background-image: radial-gradient(white 0%, rgb(33, 33, 33) 100%, rgb(150, 150, 150) 40%);
+        width: 718px;
+        height: 3150px;
+        left: -25px;
+        content: " ";
+        /* box-shadow: 10px 10px 5px #888888; TODO: MAKE THIS NICE */
+    }
+    .page-wrapper {
+        width: 668px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
